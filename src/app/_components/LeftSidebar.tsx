@@ -6,19 +6,19 @@ export function LeftSidebar() {
     { 
       name: 'LinkedIn', 
       icon: ImLinkedin, 
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/gilangrizkip',
       color: 'hover:bg-blue-600'
     },
     { 
       name: 'GitHub', 
       icon: GitBranch, 
-      url: 'https://github.com',
+      url: 'https://github.com/gilangrp',
       color: 'hover:bg-gray-800'
     },
     { 
       name: 'Email', 
       icon: Mail, 
-      url: 'mailto:hello@example.com',
+      url: 'mailto:gilangrpratama@gmail.com',
       color: 'hover:bg-red-600'
     },
   ];
