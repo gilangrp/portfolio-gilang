@@ -37,9 +37,8 @@ export function LeftSidebar() {
         </div>
         
         <p className="text-neutral-700 leading-relaxed">
-          Passionate developer with 3+ years of experience in building web and mobile applications. 
-          I specialize in React.js, Flutter, NestJS, .NET, Python and creating beautiful user experiences. 
-          Always eager to learn new technologies and solve .
+Grateful to grow alongside inspiring people, with hands-on experience in building web, AI, and mobile applications, while continuously exploring the intersection of technology, creativity, and innovation.
+
         </p>
 
         <div className="pt-4">
@@ -59,15 +58,6 @@ export function LeftSidebar() {
               </a>
             ))}
           </div>
-        </div>
-
-        <div className="pt-6">
-          <a
-            href="#contact"
-            className="inline-block px-6 py-3 bg-neutral-900 text-white rounded-lg hover:bg-neutral-800 transition-colors"
-          >
-            Get In Touch
-          </a>
         </div>
       </div>
     </aside>

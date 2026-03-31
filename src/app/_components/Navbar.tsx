@@ -1,4 +1,5 @@
 import { Menu } from 'lucide-react';
+import Link from 'next/link';
 
 export function Navbar() {
   return (
@@ -6,7 +7,10 @@ export function Navbar() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Menu className="size-6 text-neutral-700 md:hidden" />
-          <h1 className="text-xl text-neutral-900">Portfolio</h1>
+          <Link href="/" className="size-6 w-auto text-neutral-700">
+          <h1 className="text-neutral-900">Home is here</h1>
+
+          </Link>
         </div>
         <div className="flex items-center gap-6">
           <a 
