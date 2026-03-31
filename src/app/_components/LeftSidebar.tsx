@@ -1,6 +1,5 @@
-import {  Mail, Globe, GitBranch } from 'lucide-react';
+import { Mail, Globe, GitBranch } from 'lucide-react';
 import { ImLinkedin } from 'react-icons/im';
-import { LiaLinkedin } from 'react-icons/lia';
 
 export function LeftSidebar() {
   const socialLinks = [
@@ -37,24 +36,29 @@ export function LeftSidebar() {
         </div>
         
         <p className="text-neutral-700 leading-relaxed">
-Grateful to grow alongside inspiring people, with hands-on experience in building web, AI, and mobile applications, while continuously exploring the intersection of technology, creativity, and innovation.
-
+          Grateful to grow alongside inspiring people, with hands-on experience in building web, AI, and mobile applications, while continuously exploring the intersection of technology, creativity, and innovation.
         </p>
 
         <div className="pt-4">
           <h3 className="text-sm text-neutral-500 mb-4">CONNECT WITH ME</h3>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex gap-4">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-2 px-4 py-2 bg-neutral-900 text-white rounded-lg transition-all ${link.color} group`}
+                className={`
+                  w-12 h-12 flex items-center justify-center 
+                  rounded-full border border-neutral-300 
+                  text-neutral-800 bg-white
+                  transition-all duration-300 
+                  hover:text-white hover:border-transparent
+                  ${link.color}
+                `}
                 aria-label={link.name}
               >
                 <link.icon className="size-5" />
-                <span className="text-sm">{link.name}</span>
               </a>
             ))}
           </div>

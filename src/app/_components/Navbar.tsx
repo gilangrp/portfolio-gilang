@@ -8,11 +8,11 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Menu className="size-6 text-neutral-700 md:hidden" />
           <Link href="/" className="size-6 w-auto text-neutral-700">
-          <h1 className="text-neutral-900">Home is here</h1>
+          <h1 className="text-neutral-900">home_sweet_home</h1>
 
           </Link>
         </div>
-        <div className="flex items-center gap-6">
+        {/* <div className="flex items-center gap-6">
           <a 
             href="#portfolio" 
             className="text-neutral-700 hover:text-neutral-900 transition-colors"
@@ -25,7 +25,7 @@ export function Navbar() {
           >
             Article
           </a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
