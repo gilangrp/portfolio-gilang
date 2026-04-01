@@ -1,4 +1,5 @@
 import { Mail, Globe, GitBranch } from 'lucide-react';
+import { BsMedium } from 'react-icons/bs';
 import { ImLinkedin } from 'react-icons/im';
 
 export function LeftSidebar() {
@@ -21,6 +22,12 @@ export function LeftSidebar() {
       url: 'mailto:gilangrpratama@gmail.com',
       color: 'hover:bg-red-600'
     },
+    {
+      name: 'Medium',
+      icon: BsMedium,
+      url: 'https://medium.com/gilangrizkip',
+      color: 'hover:bg-gray-600'
+    }
   ];
 
   return (
