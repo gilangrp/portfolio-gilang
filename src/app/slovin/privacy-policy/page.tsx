@@ -1,7 +1,10 @@
+import Image from "next/image";
+
 export default function PrivacyPolicyPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-12 text-gray-800">
-      <h1 className="text-3xl font-bold mb-4">Privacy Policy – Sloving</h1>
+      <Image src={'/logo-slovin.png'} width={150} height={150} alt="slovin" className="mx-auto"/>
+      <h1 className="text-3xl font-bold mb-4">Privacy Policy – Slovin</h1>
       <p className="mb-8 text-sm text-gray-500">Last updated: April 2026</p>
 
       <p className="mb-6">
