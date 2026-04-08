@@ -12,20 +12,20 @@ export function Navbar() {
 
           </Link>
         </div>
-        {/* <div className="flex items-center gap-6">
-          <a 
-            href="#portfolio" 
+        <div className="flex items-center gap-6">
+          <Link 
+            href="/portfolio" 
             className="text-neutral-700 hover:text-neutral-900 transition-colors"
           >
-            See Portfolio
-          </a>
+            Portfolio
+          </Link>
           <a 
             href="#article" 
             className="text-neutral-700 hover:text-neutral-900 transition-colors"
           >
             Article
           </a>
-        </div> */}
+        </div>
       </div>
     </nav>
   );
