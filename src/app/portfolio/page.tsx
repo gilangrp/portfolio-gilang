@@ -11,31 +11,31 @@ function MobileTab() {
       <CardHeader>
         <CardTitle className="text-2xl">Mobile Development</CardTitle>
         <CardDescription>
-          Pengalaman dalam pengembangan aplikasi mobile cross-platform
+          Experience in cross-platform mobile application development
         </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1 space-y-4">
             <p className="text-muted-foreground">
-              Pengalaman saya dalam pengembangan aplikasi mobile menggunakan Flutter dan Kotlin.
-              Saya telah membangun beberapa aplikasi Travel & Umroh untuk platform iOS dan Android di tempat saya bekerja, Carbon Trade app, Mental Health app.
+              My experience in mobile application development using Flutter and Kotlin.
+              I have built several Travel & Umrah applications for iOS and Android platforms at my workplace, Carbon Trade apps, and Mental Health apps.
             </p>
             <div className="space-y-2">
-              <h4 className="font-semibold">Proyek Utama:</h4>
+              <h4 className="font-semibold">Main Projects:</h4>
               <p className="text-sm text-muted-foreground">
-                Aplikasi Travel & Umroh dengan fitur booking, itinerary, dan real-time updates. Carbon Trade app untuk memfasilitasi perdagangan karbon dengan fitur marketplace dan tracking emisi. Mental Health app untuk menyediakan sumber daya dan dukungan bagi kesehatan mental.
+                Travel & Umrah application with booking, itinerary, and real-time updates features. Carbon Trade app to facilitate carbon trading with marketplace and emission tracking features. Mental Health app to provide resources and support for mental well-being.
               </p>
             </div>
             <div className="space-y-2">
-              <h4 className="font-semibold">Teknologi:</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Flutter untuk UI yang smooth</li>
-                <li>• Kotlin untuk pengembangan Android</li>
-                <li>• Integrasi dengan REST APIs</li>
-                <li>• Push notifications</li>
-                <li>• Firebase Integration</li>
-                <li>• iOS App Store Deployment  & Android Play Store Deployment</li>
+              <h4 className="font-semibold">Technologies:</h4>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+                <li>Flutter for smooth UI</li>
+                <li>Kotlin for Android development</li>
+                <li>REST APIs integration</li>
+                <li>Push notifications</li>
+                <li>Firebase Integration</li>
+                <li>iOS App Store Deployment & Android Play Store Deployment</li>
               </ul>
             </div>
           </div>
@@ -60,29 +60,29 @@ function WebTab() {
       <CardHeader>
         <CardTitle className="text-2xl">Web Development</CardTitle>
         <CardDescription>
-          Spesialisasi dalam pengembangan aplikasi web modern
+          Specialization in modern web application development
         </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1 space-y-4">
             <p className="text-muted-foreground">
-              Sebagai web developer, saya ahli dalam React, Next.js, Angular, Flutter Web dan Vue.js.
-              Saya telah membuat berbagai website responsif dan aplikasi web untuk klien enterprise.
+              As a web developer, I am skilled in React, Next.js, Angular, Flutter Web, and Vue.js.
+              I have built various responsive websites and web applications for enterprise clients.
             </p>
             <div className="space-y-2">
-              <h4 className="font-semibold">Proyek Utama:</h4>
+              <h4 className="font-semibold">Main Projects:</h4>
               <p className="text-sm text-muted-foreground">
-                Enterprise Resource Planning Manufacture, Carbon Trade app, Travel Umrah & Hajj, Ecology app, Hire expert portal.
+                Manufacturing Enterprise Resource Planning, Carbon Trade app, Travel Umrah & Hajj, Ecology app, Hire expert portal.
               </p>
             </div>
             <div className="space-y-2">
-              <h4 className="font-semibold">Teknologi:</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• Next.js untuk SSR dan SSG</li>
-                <li>• Backend integration</li>
-                <li>• Interactive UI</li>
-                <li>• Database integration (MySQL, PostgreSQL, Firestore)</li>
+              <h4 className="font-semibold">Technologies:</h4>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+                <li>Next.js for SSR and SSG</li>
+                <li>Backend integration</li>
+                <li>Interactive UI</li>
+                <li>Database integration (MySQL, PostgreSQL, Firestore)</li>
               </ul>
             </div>
           </div>
@@ -107,33 +107,27 @@ function InfraTab() {
       <CardHeader>
         <CardTitle className="text-2xl">Infrastructure AWS</CardTitle>
         <CardDescription>
-          Arsitektur cloud scalable dan secure
+          Scalable and secure cloud architecture
         </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1 space-y-4">
             <p className="text-muted-foreground">
-              Pengalaman dalam mengelola infrastruktur cloud menggunakan VPS regular, and AWS services.
-              Saya telah mendesain dan mengimplementasikan arsitektur cloud yang scalable dan secure.
+              Experience in managing cloud infrastructure using regular VPS and AWS services.
+              I have designed and implemented scalable and secure cloud architectures.
             </p>
-            {/* <div className="space-y-2">
-              <h4 className="font-semibold">Proyek Utama:</h4>
-              <p className="text-sm text-muted-foreground">
-                
-              </p>
-            </div> */}
             <div className="space-y-2">
               <h4 className="font-semibold">Services:</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• EC2 untuk compute instances</li>
-                <li>• S3 dan CloudFront untuk storage dan CDN</li>
-                <li>• Lambda untuk serverless functions</li>
-                <li>• RDS dan DynamoDB untuk databases</li>
-                <li>• Deploying app using ECS, ECR</li>
-                <li>• Deploying app using  Nginx using VPS regular</li>
-                <li>• CI/CD Github</li>
-                <li>• Infrastructure as Code (Terraform)</li>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+                <li>EC2 for compute instances</li>
+                <li>S3 and CloudFront for storage and CDN</li>
+                <li>Lambda for serverless functions</li>
+                <li>RDS and DynamoDB for databases</li>
+                <li>Deploying applications using ECS, ECR</li>
+                <li>Deploying applications using Nginx on regular VPS</li>
+                <li>CI/CD GitHub</li>
+                <li>Infrastructure as Code (Terraform)</li>
               </ul>
             </div>
           </div>
@@ -158,30 +152,30 @@ function AiTab() {
       <CardHeader>
         <CardTitle className="text-2xl">AI/ML</CardTitle>
         <CardDescription>
-          Machine learning dan artificial intelligence solutions
+          Machine learning and artificial intelligence solutions
         </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1 space-y-4">
             <p className="text-muted-foreground">
-              Eksplorasi dalam machine learning dan AI, termasuk penggunaan TensorFlow dan Python
-              untuk proyek-proyek prediktif dan computer vision.
+              Exploration in machine learning and AI, including the use of TensorFlow and Python
+              for predictive and computer vision projects.
             </p>
             <div className="space-y-2">
-              <h4 className="font-semibold">Proyek Utama:</h4>
+              <h4 className="font-semibold">Main Projects:</h4>
               <p className="text-sm text-muted-foreground">
-                Detect Carbon usage, music computer vision
+                Detecting carbon usage, music computer vision
               </p>
             </div>
             <div className="space-y-2">
-              <h4 className="font-semibold">Teknologi AI/ML:</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• TensorFlow dan PyTorch untuk model ML</li>
-                <li>• Computer vision dengan OpenCV, YOLO</li>
-                <li>• NLP dengan BERT dan transformers</li>
-                <li>• MLOps dengan Kubeflow</li>
-                <li>• Regression Linear prediction</li>
+              <h4 className="font-semibold">AI/ML Technologies:</h4>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+                <li>TensorFlow and PyTorch for ML models</li>
+                <li>Computer vision with OpenCV, YOLO</li>
+                <li>NLP with BERT and transformers</li>
+                <li>MLOps with Kubeflow</li>
+                <li>Linear regression prediction</li>
               </ul>
             </div>
           </div>
@@ -206,30 +200,30 @@ function IotTab() {
       <CardHeader>
         <CardTitle className="text-2xl">IoT</CardTitle>
         <CardDescription>
-          Internet of Things dan embedded systems
+          Internet of Things and embedded systems
         </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1 space-y-4">
             <p className="text-muted-foreground">
-              Pengembangan perangkat IoT menggunakan ESP32, dan protokol komunikasi
-              seperti MQTT. Saya telah membangun sistem monitoring tanaman dan kontrol jarak jauh.
+              IoT device development using ESP32 and communication protocols
+              such as MQTT. I have built plant monitoring and remote control systems.
             </p>
             <div className="space-y-2">
-              <h4 className="font-semibold">Proyek Utama:</h4>
+              <h4 className="font-semibold">Main Projects:</h4>
               <p className="text-sm text-muted-foreground">
                 Smart plant.
               </p>
             </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Hardware & Protocol:</h4>
-              <ul className="text-sm text-muted-foreground space-y-1">
-                <li>• ESP32 untuk prototyping</li>
-                <li>• MQTT untuk komunikasi device-to-cloud</li>
-                <li>• Sensor integration (temperature, motion, etc.)</li>
-                <li>• Integration with AWS IoT Core</li>
-                <li>• Real-time data processing</li>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+                <li>ESP32 for prototyping</li>
+                <li>MQTT for device-to-cloud communication</li>
+                <li>Sensor integration (temperature, motion, etc.)</li>
+                <li>Integration with AWS IoT Core</li>
+                <li>Real-time data processing</li>
               </ul>
             </div>
           </div>
