@@ -132,6 +132,8 @@ function InfraTab() {
                 <li>• RDS dan DynamoDB untuk databases</li>
                 <li>• Deploying app using ECS, ECR</li>
                 <li>• Deploying app using  Nginx using VPS regular</li>
+                <li>• CI/CD Github</li>
+                <li>• Infrastructure as Code (Terraform)</li>
               </ul>
             </div>
           </div>
