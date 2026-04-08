@@ -25,12 +25,6 @@ export function Navbar() {
           >
             Experience
           </Link>
-          <a 
-            href="#article" 
-            className="text-neutral-700 hover:text-neutral-900 transition-colors"
-          >
-            Article
-          </a>
         </div>
       </div>
     </nav>
