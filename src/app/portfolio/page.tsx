@@ -256,11 +256,11 @@ export default function Portfolio() {
 
         <Tabs defaultValue="mobile" className="w-full">
           <TabsList className="grid w-full grid-cols-5 mb-8">
-            <TabsTrigger value="mobile">Mobile</TabsTrigger>
-            <TabsTrigger value="web">Web Dev</TabsTrigger>
-            <TabsTrigger value="infra">Infra AWS</TabsTrigger>
-            <TabsTrigger value="ai">AI/ML</TabsTrigger>
-            <TabsTrigger value="iot">IoT</TabsTrigger>
+            <TabsTrigger value="mobile" className="cursor-pointer">Mobile</TabsTrigger>
+            <TabsTrigger value="web" className="cursor-pointer">Web Dev</TabsTrigger>
+            <TabsTrigger value="infra" className="cursor-pointer">Infra AWS</TabsTrigger>
+            <TabsTrigger value="ai" className="cursor-pointer">AI/ML</TabsTrigger>
+            <TabsTrigger value="iot" className="cursor-pointer">IoT</TabsTrigger>
           </TabsList>
 
           <TabsContent value="mobile">
