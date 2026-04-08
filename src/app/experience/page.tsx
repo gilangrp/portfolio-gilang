@@ -9,16 +9,16 @@ const experiences = [
     company: 'PT. Rekabio',
     position: 'Fullstack Developer',
     period: 'November 2023 - July 2024',
-    description: 'Mengembangkan aplikasi web dan mobile, integrasi dengan AWS (Amplify & S3), serta merancang Use Case dan Data Flow Diagrams.',
+    description: 'Developed web and mobile applications, integrated with AWS (Amplify & S3), and designed Use Case and Data Flow Diagrams.',
     technologies: ['React', 'Express', 'ASP.NET', 'Flutter', 'AWS', 'MySQL', 'Oracle'],
     side: 'left'
   },
   {
     id: 2,
     company: 'Google Developer Student Club',
-    position: 'Design Creative',
+    position: 'Creative Designer',
     period: 'August 2023 - May 2024',
-    description: 'Mengelola akun media sosial, merencanakan konten strategis, dan merancang aset visual untuk mendukung tujuan edukasi komunitas.',
+    description: 'Managed social media accounts, planned strategic content, and designed visual assets to support community education goals.',
     technologies: ['Figma', 'Copywriting', 'Content Planning'],
     side: 'right'
   },
@@ -26,29 +26,29 @@ const experiences = [
     id: 3,
     company: 'PT. Toyo Business Engineering Indonesia',
     position: 'Web Developer',
-    period: 'October 2024 - Sept 2025',
-    description: 'Fokus pada solusi ERP untuk industri manufaktur, membangun aplikasi web dan mobile yang scalable serta fitur inovatif untuk menyederhanakan proses manufaktur.',
+    period: '2024 - 2025',
+    description: 'Focused on ERP solutions for the manufacturing industry, building scalable web and mobile applications with innovative features to simplify manufacturing processes.',
     technologies: ['Flutter', '.NET', 'Oracle Database'],
     side: 'left'
   },
-  {
-    id: 4,
-    company: 'Ecogovern Sdn Bhd',
-    position: 'Frontend Developer',
-    period: '2025',
-    description: 'Membuat sistem report carbon dan membuat sistem pelaporan SEDG perusahaan.',
-    technologies: ['Nextjs', 'Terraform', 'PostgreSQL'],
-    side: 'right'
-  },
-  {
-    id: 5,
-    company: 'PT. Sarana Amal Indonesia',
-    position: 'Fullstack Developer',
-    period: '2025',
-    description: 'Membuat aplikasi Travel & Umrah mobile dan web',
-    technologies: ['Nextjs', 'Flutter', 'NestJs', 'Nginx', 'Firebase', 'App Store'],
-    side: 'left'
-  },
+  // {
+  //   id: 4,
+  //   company: 'Ecogovern Sdn Bhd',
+  //   position: 'Frontend Developer',
+  //   period: '2025',
+  //   description: 'Developed carbon reporting systems and corporate SDG reporting systems.',
+  //   technologies: ['Nextjs', 'Terraform', 'PostgreSQL'],
+  //   side: 'right'
+  // },
+  // {
+  //   id: 5,
+  //   company: 'PT. Sarana Amal Indonesia',
+  //   position: 'Fullstack Developer',
+  //   period: '2025',
+  //   description: 'Developed Travel & Umrah mobile and web applications.',
+  //   technologies: ['Nextjs', 'Flutter', 'NestJs', 'Nginx', 'Firebase', 'App Store'],
+  //   side: 'left'
+  // },
 ];
 
 function TimelineItem({ experience, isLast }: { experience: typeof experiences[0], isLast: boolean }) {
@@ -103,7 +103,7 @@ export default function Experience() {
       <div className="mb-12 text-center">
         <h1 className="text-4xl font-bold mb-4">Work Experience</h1>
         <p className="text-muted-foreground text-lg">
-          Perjalanan karir saya dalam dunia teknologi dan pengembangan software
+          My career journey in the world of technology and software development
         </p>
       </div>
 
