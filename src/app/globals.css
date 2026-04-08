@@ -129,6 +129,7 @@
     @apply border-border outline-ring/50;
   }
   body {
+    font-family: var(--font-nunito);
     @apply bg-background text-foreground;
   }
   html {
