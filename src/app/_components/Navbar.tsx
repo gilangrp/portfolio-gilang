@@ -19,6 +19,12 @@ export function Navbar() {
           >
             Portfolio
           </Link>
+          <Link 
+            href="/experience" 
+            className="text-neutral-700 hover:text-neutral-900 transition-colors"
+          >
+            Experience
+          </Link>
           <a 
             href="#article" 
             className="text-neutral-700 hover:text-neutral-900 transition-colors"
