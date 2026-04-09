@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Navbar } from '../_components/Navbar';
@@ -41,12 +43,25 @@ function MobileTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <Image
-              src="https://via.placeholder.com/400x300?text=Mobile+App+Screenshot"
-              alt="Mobile App"
-              width={400}
-              height={300}
-              className="rounded-lg shadow-md"
+            <ImageGallery
+              items={[
+                {
+                  original: 'https://placehold.co/400x300?text=Mobile+App+Screenshot+1',
+                  thumbnail: 'https://placehold.co/100x75?text=1',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=Mobile+App+Screenshot+2',
+                  thumbnail: 'https://placehold.co/100x75?text=2',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=Mobile+App+Screenshot+3',
+                  thumbnail: 'https://placehold.co/100x75?text=3',
+                },
+              ]}
+              showPlayButton={false}
+              showFullscreenButton={true}
+              showThumbnails={true}
+              thumbnailPosition="bottom"
             />
           </div>
         </div>
@@ -89,12 +104,25 @@ function WebTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <Image
-              src="https://via.placeholder.com/400x300?text=Web+App+Dashboard"
-              alt="Web App"
-              width={400}
-              height={300}
-              className="rounded-lg shadow-md"
+            <ImageGallery
+              items={[
+                {
+                  original: 'https://placehold.co/400x300?text=Web+App+Dashboard+1',
+                  thumbnail: 'https://placehold.co/100x75?text=1',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=Web+App+Dashboard+2',
+                  thumbnail: 'https://placehold.co/100x75?text=2',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=Web+App+Dashboard+3',
+                  thumbnail: 'https://placehold.co/100x75?text=3',
+                },
+              ]}
+              showPlayButton={false}
+              showFullscreenButton={true}
+              showThumbnails={true}
+              thumbnailPosition="bottom"
             />
           </div>
         </div>
@@ -135,12 +163,25 @@ function InfraTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <Image
-              src="https://via.placeholder.com/400x300?text=AWS+Architecture"
-              alt="AWS Infra"
-              width={400}
-              height={300}
-              className="rounded-lg shadow-md"
+            <ImageGallery
+              items={[
+                {
+                  original: 'https://placehold.co/400x300?text=AWS+Architecture+1',
+                  thumbnail: 'https://placehold.co/100x75?text=1',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=AWS+Architecture+2',
+                  thumbnail: 'https://placehold.co/100x75?text=2',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=AWS+Architecture+3',
+                  thumbnail: 'https://placehold.co/100x75?text=3',
+                },
+              ]}
+              showPlayButton={false}
+              showFullscreenButton={true}
+              showThumbnails={true}
+              thumbnailPosition="bottom"
             />
           </div>
         </div>
@@ -184,12 +225,25 @@ function AiTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <Image
-              src="https://via.placeholder.com/400x300?text=AI+Model+Visualization"
-              alt="AI/ML"
-              width={400}
-              height={300}
-              className="rounded-lg shadow-md"
+            <ImageGallery
+              items={[
+                {
+                  original: 'https://placehold.co/400x300?text=AI+Model+Visualization+1',
+                  thumbnail: 'https://placehold.co/100x75?text=1',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=AI+Model+Visualization+2',
+                  thumbnail: 'https://placehold.co/100x75?text=2',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=AI+Model+Visualization+3',
+                  thumbnail: 'https://placehold.co/100x75?text=3',
+                },
+              ]}
+              showPlayButton={false}
+              showFullscreenButton={true}
+              showThumbnails={true}
+              thumbnailPosition="bottom"
             />
           </div>
         </div>
@@ -233,12 +287,25 @@ function IotTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <Image
-              src="https://via.placeholder.com/400x300?text=IoT+Device+Network"
-              alt="IoT"
-              width={400}
-              height={300}
-              className="rounded-lg shadow-md"
+            <ImageGallery
+              items={[
+                {
+                  original: 'https://placehold.co/400x300?text=IoT+Device+Network+1',
+                  thumbnail: 'https://placehold.co/100x75?text=1',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=IoT+Device+Network+2',
+                  thumbnail: 'https://placehold.co/100x75?text=2',
+                },
+                {
+                  original: 'https://placehold.co/400x300?text=IoT+Device+Network+3',
+                  thumbnail: 'https://placehold.co/100x75?text=3',
+                },
+              ]}
+              showPlayButton={false}
+              showFullscreenButton={true}
+              showThumbnails={true}
+              thumbnailPosition="bottom"
             />
           </div>
         </div>
