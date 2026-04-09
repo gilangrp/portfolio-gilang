@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import ImageGallery from 'react-image-gallery';
-import "react-image-gallery/styles/css/image-gallery.css";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Navbar } from '../_components/Navbar';
