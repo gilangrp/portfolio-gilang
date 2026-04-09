@@ -15,18 +15,12 @@ function MobileTab() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <div className="space-y-6">
+          <div className="space-y-4">
             <p className="text-muted-foreground">
               My experience in mobile application development using Flutter and Kotlin.
               I have built several Travel & Umrah applications for iOS and Android platforms at my workplace, Carbon Trade apps, and Mental Health apps.
             </p>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Main Projects:</h4>
-              <p className="text-sm text-muted-foreground">
-                Travel & Umrah application with booking, itinerary, and real-time updates features. Carbon Trade app to facilitate carbon trading with marketplace and emission tracking features. Mental Health app to provide resources and support for mental well-being.
-              </p>
-            </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Technologies:</h4>
               <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
@@ -39,6 +33,13 @@ function MobileTab() {
               </ul>
             </div>
           </div>
+          <div className="space-y-2">
+            <h4 className="font-semibold">Main Projects:</h4>
+            <p className="text-sm text-muted-foreground">
+              Travel & Umrah application with booking, itinerary, and real-time updates features. Carbon Trade app to facilitate carbon trading with marketplace and emission tracking features. Mental Health app to provide resources and support for mental well-being.
+            </p>
+          </div>
+          <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
             <Image
               src="https://via.placeholder.com/400x300?text=Mobile+App+Screenshot"
@@ -64,18 +65,12 @@ function WebTab() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <div className="space-y-6">
+          <div className="space-y-4">
             <p className="text-muted-foreground">
               As a web developer, I am skilled in React, Next.js, Angular, Flutter Web, and Vue.js.
               I have built various responsive websites and web applications for enterprise clients.
             </p>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Main Projects:</h4>
-              <p className="text-sm text-muted-foreground">
-                Manufacturing Enterprise Resource Planning, Carbon Trade app, Travel Umrah & Hajj, Ecology app, Hire expert portal.
-              </p>
-            </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Technologies:</h4>
               <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
@@ -86,6 +81,13 @@ function WebTab() {
               </ul>
             </div>
           </div>
+          <div className="space-y-2">
+            <h4 className="font-semibold">Main Projects:</h4>
+            <p className="text-sm text-muted-foreground">
+              Manufacturing Enterprise Resource Planning, Carbon Trade app, Travel Umrah & Hajj, Ecology app, Hire expert portal.
+            </p>
+          </div>
+          <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
             <Image
               src="https://via.placeholder.com/400x300?text=Web+App+Dashboard"
@@ -111,26 +113,27 @@ function InfraTab() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <div className="space-y-6">
+          <div className="space-y-4">
             <p className="text-muted-foreground">
               Experience in managing cloud infrastructure using regular VPS and AWS services.
               I have designed and implemented scalable and secure cloud architectures.
             </p>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Services:</h4>
-              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
-                <li>EC2 for compute instances</li>
-                <li>S3 and CloudFront for storage and CDN</li>
-                <li>Lambda for serverless functions</li>
-                <li>RDS and DynamoDB for databases</li>
-                <li>Deploying applications using ECS, ECR</li>
-                <li>Deploying applications using Nginx on regular VPS</li>
-                <li>CI/CD GitHub</li>
-                <li>Infrastructure as Code (Terraform)</li>
-              </ul>
-            </div>
           </div>
+          <div className="space-y-2">
+            <h4 className="font-semibold">Services:</h4>
+            <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+              <li>EC2 for compute instances</li>
+              <li>S3 and CloudFront for storage and CDN</li>
+              <li>Lambda for serverless functions</li>
+              <li>RDS and DynamoDB for databases</li>
+              <li>Deploying applications using ECS, ECR</li>
+              <li>Deploying applications using Nginx on regular VPS</li>
+              <li>CI/CD GitHub</li>
+              <li>Infrastructure as Code (Terraform)</li>
+            </ul>
+          </div>
+          <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
             <Image
               src="https://via.placeholder.com/400x300?text=AWS+Architecture"
@@ -156,18 +159,12 @@ function AiTab() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <div className="space-y-6">
+          <div className="space-y-4">
             <p className="text-muted-foreground">
               Exploration in machine learning and AI, including the use of TensorFlow and Python
               for predictive and computer vision projects.
             </p>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Main Projects:</h4>
-              <p className="text-sm text-muted-foreground">
-                Detecting carbon usage, music computer vision
-              </p>
-            </div>
             <div className="space-y-2">
               <h4 className="font-semibold">AI/ML Technologies:</h4>
               <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
@@ -179,6 +176,13 @@ function AiTab() {
               </ul>
             </div>
           </div>
+          <div className="space-y-2">
+            <h4 className="font-semibold">Main Projects:</h4>
+            <p className="text-sm text-muted-foreground">
+              Detecting carbon usage, music computer vision
+            </p>
+          </div>
+          <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
             <Image
               src="https://via.placeholder.com/400x300?text=AI+Model+Visualization"
@@ -204,18 +208,12 @@ function IotTab() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="flex-1 space-y-4">
+        <div className="space-y-6">
+          <div className="space-y-4">
             <p className="text-muted-foreground">
               IoT device development using ESP32 and communication protocols
               such as MQTT. I have built plant monitoring and remote control systems.
             </p>
-            <div className="space-y-2">
-              <h4 className="font-semibold">Main Projects:</h4>
-              <p className="text-sm text-muted-foreground">
-                Smart plant.
-              </p>
-            </div>
             <div className="space-y-2">
               <h4 className="font-semibold">Hardware & Protocol:</h4>
               <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
@@ -227,6 +225,13 @@ function IotTab() {
               </ul>
             </div>
           </div>
+          <div className="space-y-2">
+            <h4 className="font-semibold">Main Projects:</h4>
+            <p className="text-sm text-muted-foreground">
+              Smart plant.
+            </p>
+          </div>
+          <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
             <Image
               src="https://via.placeholder.com/400x300?text=IoT+Device+Network"
