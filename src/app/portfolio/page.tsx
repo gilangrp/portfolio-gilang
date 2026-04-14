@@ -33,6 +33,14 @@ function MobileTab() {
                 <li>iOS App Store Deployment & Android Play Store Deployment</li>
               </ul>
             </div>
+            <div className="space-y-2">
+              <h4 className="font-semibold">Additional Experience:</h4>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+                <li>Android migration to support 16KB page size compliance</li>
+                <li>Advanced state management using GetX, Flutter Hooks, Riverpod, and BLoC</li>
+                <li>Flutter flavoring implementation (single codebase for multiple environments/projects)</li>
+              </ul>
+            </div>  
           </div>
           <div className="space-y-2">
             <h4 className="font-semibold">Main Projects:</h4>
@@ -160,6 +168,13 @@ function InfraTab() {
               <li>Infrastructure as Code (Terraform)</li>
             </ul>
           </div>
+          <div className="space-y-2">
+  <h4 className="font-semibold">Security & Testing:</h4>
+  <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+    <li>Performance and load testing using K6 for web injection scenarios</li>
+    <li>Security testing based on OWASP Top 10 standards</li>
+  </ul>
+</div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
             <ImageGallery
@@ -218,9 +233,11 @@ function AiTab() {
           </div>
           <div className="space-y-2">
             <h4 className="font-semibold">Main Projects:</h4>
-            <p className="text-sm text-muted-foreground">
-              Detecting carbon usage, music computer vision
-            </p>
+            <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+    <li>Carbon usage prediction using regression models based on input features</li>
+    <li>Built ESG Intelligence system using AWS Bedrock integrated with AWS Glue and AWS RDS</li>
+  <li>Music Violin computer vision</li>
+            </ul>
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
