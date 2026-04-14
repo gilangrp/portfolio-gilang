@@ -89,7 +89,7 @@ export function LeftSidebar() {
         text-center
       "
               >
-                ✨ My Portfolio
+                Check Portfolio
               </a>
 
               {/* <a
