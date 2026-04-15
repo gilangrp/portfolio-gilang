@@ -39,6 +39,7 @@ function MobileTab() {
                 <li>Android migration to support 16KB page size compliance</li>
                 <li>Advanced state management using GetX, Flutter Hooks, Riverpod, and BLoC</li>
                 <li>Flutter flavoring implementation (single codebase for multiple environments/projects)</li>
+                <li>ProGuard/R8 obfuscation, shrinking, and optimization for Android release builds</li>
               </ul>
             </div>  
           </div>
