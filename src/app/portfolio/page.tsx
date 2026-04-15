@@ -40,6 +40,13 @@ function MobileTab() {
                 <li>Advanced state management using GetX, Flutter Hooks, Riverpod, and BLoC</li>
                 <li>Flutter flavoring implementation (single codebase for multiple environments/projects)</li>
                 <li>ProGuard/R8 obfuscation, shrinking, and optimization for Android release builds</li>
+                <li>App signing & keystore management (upload key, release key)</li>
+                <li>Deep links / App Links handling</li>
+                <li>In-app update using Google Play In-App Updates API</li>
+                <li>TestFlight distribution & beta testing</li>
+                <li>App Store Connect management</li>
+                <li>Provisioning profiles & certificate management</li>
+                <li>Localization / multi-language support</li>
               </ul>
             </div>  
           </div>
