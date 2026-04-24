@@ -33,6 +33,15 @@ function MobileTab() {
                 <li>iOS App Store Deployment & Android Play Store Deployment</li>
               </ul>
             </div>
+
+            <div className="space-y-2">
+              <h4 className="font-semibold">Flavoring & Versioning Experience:</h4>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
+                <li>Flutter flavoring implementation (single codebase for multiple environments/projects)</li>
+                <li>Comprehensive app versioning management across mobile and web platforms, ensuring consistency across multiple flavors</li>
+              </ul>
+            </div>
+            
             <div className="space-y-2">
               <h4 className="font-semibold">Additional Experience:</h4>
               <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-5 marker:text-foreground">
