@@ -1,12 +1,21 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import mobile1 from '@/assets/mobile/mobile1.png';
 import mobile2 from '@/assets/mobile/mobile2.png';
 import mobile3 from '@/assets/mobile/mobile3.jpeg';
 import mobile4 from '@/assets/mobile/mobile4.jpeg';
 import mobile5 from '@/assets/mobile/mobile5.jpeg';
+import exampleImage from '@/assets/example.png';
+import web1 from '@/assets/web/web1.png';
+import web2 from '@/assets/web/web2.png';
+import web3 from '@/assets/web/web3.png';
+import web4 from '@/assets/web/web4.png';
+import web5 from '@/assets/web/web5.png';
+import web6 from '@/assets/web/web6.png';
+
+
 
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -21,31 +30,117 @@ const mobileScreens = [
   { src: mobile5, alt: 'Mobile Umrah & Hajj Travel App - 3' },
 ];
 
-function MobileTab() {
+const webScreens = [
+  { src: web1, alt: 'Web Example 1' },
+  { src: web2, alt: 'Web Example 2' },
+  { src: web3, alt: 'Web Example 3' },
+  { src: web4, alt: 'Web Example 4' },
+  { src: web5, alt: 'Web Example 5' },
+  { src: web6, alt: 'Web Example 6' },
+];
+
+const infraScreens = [
+  { src: exampleImage, alt: 'Infra Example 1' },
+  { src: exampleImage, alt: 'Infra Example 2' },
+  { src: exampleImage, alt: 'Infra Example 3' },
+];
+
+const aiScreens = [
+  { src: exampleImage, alt: 'AI/ML Example 1' },
+  { src: exampleImage, alt: 'AI/ML Example 2' },
+  { src: exampleImage, alt: 'AI/ML Example 3' },
+];
+
+const iotScreens = [
+  { src: exampleImage, alt: 'IoT Example 1' },
+  { src: exampleImage, alt: 'IoT Example 2' },
+  { src: exampleImage, alt: 'IoT Example 3' },
+];
+
+function GalleryPreview({ title, items }: { title: string; items: Array<{ src: StaticImageData; alt: string }> }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <Card className="w-full">
+    <>
       <div className="space-y-4 px-6 pt-6">
         <div className="flex items-center justify-between">
-          <h4 className="font-semibold">My Recent Works</h4>
+          <h4 className="font-semibold">{title}</h4>
           <span className="text-xs text-muted-foreground">Click to enlarge</span>
         </div>
         <div className="flex gap-4 overflow-x-auto pb-2">
-          {mobileScreens.map((item, index) => (
+          {items.map((item, index) => (
             <button
               key={item.alt}
               type="button"
               onClick={() => setOpenIndex(index)}
               className="cursor-pointer group shrink-0 overflow-hidden rounded-3xl border border-neutral-200 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-slate-400"
             >
-              <div className="relative h-72 w-90">
+              <div className="relative h-72 w-[360px]">
                 <Image src={item.src} alt={item.alt} fill className="object-cover" />
               </div>
             </button>
           ))}
         </div>
+
+        {openIndex !== null ? (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
+            <button
+              type="button"
+              className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-2 text-sm font-semibold text-slate-900 shadow-lg"
+              onClick={() => setOpenIndex(null)}
+              aria-label="Close image preview"
+            >
+              ✕
+            </button>
+
+            <div className="relative max-h-[90vh] w-full max-w-3xl overflow-hidden rounded-3xl bg-white p-4 shadow-2xl">
+              <div className="relative h-[70vh] w-full">
+                <Image
+                  src={items[openIndex].src}
+                  alt={items[openIndex].alt}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="mt-4 flex items-center justify-between gap-3">
+                <p className="text-sm text-muted-foreground">{items[openIndex].alt}</p>
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenIndex((prev) =>
+                        prev === 0 ? items.length - 1 : prev! - 1
+                      )
+                    }
+                    className="rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm transition hover:bg-neutral-100"
+                  >
+                    Prev
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenIndex((prev) =>
+                        prev === items.length - 1 ? 0 : prev! + 1
+                      )
+                    }
+                    className="rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm transition hover:bg-neutral-100"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : null}
       </div>
+    </>
+  );
+}
+
+function MobileTab() {
+  return (
+    <Card className="w-full">
+      <GalleryPreview title="My Recent Works" items={mobileScreens} />
 
       <CardHeader>
         <CardTitle className="text-2xl">Mobile Development</CardTitle>
@@ -104,57 +199,6 @@ function MobileTab() {
             </p>
           </div>
           <hr className="border-t-2 border-gray-300" />
-
-          {openIndex !== null ? (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
-              <button
-                type="button"
-                className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-2 text-sm font-semibold text-slate-900 shadow-lg"
-                onClick={() => setOpenIndex(null)}
-                aria-label="Close image preview"
-              >
-                ✕
-              </button>
-
-              <div className="relative max-h-[90vh] w-full max-w-3xl overflow-hidden rounded-3xl bg-white p-4 shadow-2xl">
-                <div className="relative h-[70vh] w-full">
-                  <Image
-                    src={mobileScreens[openIndex].src}
-                    alt={mobileScreens[openIndex].alt}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <div className="mt-4 flex items-center justify-between gap-3">
-                  <p className="text-sm text-muted-foreground">{mobileScreens[openIndex].alt}</p>
-                  <div className="flex gap-2">
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setOpenIndex((prev) =>
-                          prev === 0 ? mobileScreens.length - 1 : prev! - 1
-                        )
-                      }
-                      className="rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm transition hover:bg-neutral-100"
-                    >
-                      Prev
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setOpenIndex((prev) =>
-                          prev === mobileScreens.length - 1 ? 0 : prev! + 1
-                        )
-                      }
-                      className="rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm transition hover:bg-neutral-100"
-                    >
-                      Next
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ) : null}
         </div>
       </CardContent>
     </Card>
@@ -164,6 +208,8 @@ function MobileTab() {
 function WebTab() {
   return (
     <Card className="w-full">
+      <GalleryPreview title="Web Projects" items={webScreens} />
+
       <CardHeader>
         <CardTitle className="text-2xl">Web Development</CardTitle>
         <CardDescription>
@@ -207,6 +253,8 @@ function WebTab() {
 function InfraTab() {
   return (
     <Card className="w-full">
+      <GalleryPreview title="Infra Projects" items={infraScreens} />
+
       <CardHeader>
         <CardTitle className="text-2xl">Infrastructure AWS</CardTitle>
         <CardDescription>
@@ -255,6 +303,8 @@ function InfraTab() {
 function AiTab() {
   return (
     <Card className="w-full">
+      <GalleryPreview title="AI/ML Projects" items={aiScreens} />
+
       <CardHeader>
         <CardTitle className="text-2xl">AI/ML</CardTitle>
         <CardDescription>
@@ -301,6 +351,8 @@ function AiTab() {
 function IotTab() {
   return (
     <Card className="w-full">
+      <GalleryPreview title="IoT Projects" items={iotScreens} />
+
       <CardHeader>
         <CardTitle className="text-2xl">IoT</CardTitle>
         <CardDescription>
