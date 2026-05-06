@@ -14,6 +14,11 @@ import web3 from '@/assets/web/web3.png';
 import web4 from '@/assets/web/web4.png';
 import web5 from '@/assets/web/web5.png';
 import web6 from '@/assets/web/web6.png';
+import iot1 from '@/assets/iot/iot1.jpeg';
+import iot2 from '@/assets/iot/iot2.png';
+import iot3 from '@/assets/iot/iot3.png';
+import iot4 from '@/assets/iot/iot4.png';
+
 
 
 
@@ -52,9 +57,10 @@ const aiScreens = [
 ];
 
 const iotScreens = [
-  { src: exampleImage, alt: 'IoT Example 1' },
-  { src: exampleImage, alt: 'IoT Example 2' },
-  { src: exampleImage, alt: 'IoT Example 3' },
+  { src: iot1, alt: 'IoT with ESP32, MQTT' },
+  { src: iot2, alt: 'AWS IoT Core Integration' },
+  { src: iot3, alt: 'Sneak peak of Arduino IDE' },
+  { src: iot4, alt: 'Mobile App integrated with AWS IoT connected to ESP32' },
 ];
 
 function GalleryPreview({ title, items }: { title: string; items: Array<{ src: StaticImageData; alt: string }> }) {
