@@ -1,14 +1,52 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
-import ImageGallery from 'react-image-gallery';
+import mobile1 from '@/assets/mobile/mobile1.png';
+import mobile2 from '@/assets/mobile/mobile2.png';
+import mobile3 from '@/assets/mobile/mobile3.jpeg';
+import mobile4 from '@/assets/mobile/mobile4.jpeg';
+import mobile5 from '@/assets/mobile/mobile5.jpeg';
+
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Navbar } from '../_components/Navbar';
 
+const mobileScreens = [
+  { src: mobile1, alt: 'Mobile Playstore Deployment' },
+  { src: mobile2, alt: 'Mobile App Store iOS Deployment' },
+  { src: mobile3, alt: 'Mobile Umrah & Hajj Travel App - 1' },
+  { src: mobile4, alt: 'Mobile Umrah & Hajj Travel App - 2' },
+  { src: mobile5, alt: 'Mobile Umrah & Hajj Travel App - 3' },
+];
+
 function MobileTab() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <Card className="w-full">
+      <div className="space-y-4 px-6 pt-6">
+        <div className="flex items-center justify-between">
+          <h4 className="font-semibold">My Recent Works</h4>
+          <span className="text-xs text-muted-foreground">Click to enlarge</span>
+        </div>
+        <div className="flex gap-4 overflow-x-auto pb-2">
+          {mobileScreens.map((item, index) => (
+            <button
+              key={item.alt}
+              type="button"
+              onClick={() => setOpenIndex(index)}
+              className="cursor-pointer group shrink-0 overflow-hidden rounded-3xl border border-neutral-200 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-slate-400"
+            >
+              <div className="relative h-72 w-90">
+                <Image src={item.src} alt={item.alt} fill className="object-cover" />
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
       <CardHeader>
         <CardTitle className="text-2xl">Mobile Development</CardTitle>
         <CardDescription>
@@ -66,28 +104,57 @@ function MobileTab() {
             </p>
           </div>
           <hr className="border-t-2 border-gray-300" />
-          <div className="flex-shrink-0">
-            <ImageGallery
-              items={[
-                {
-                  original: 'https://placehold.co/400x300?text=Mobile+App+Screenshot+1',
-                  thumbnail: 'https://placehold.co/100x75?text=1',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=Mobile+App+Screenshot+2',
-                  thumbnail: 'https://placehold.co/100x75?text=2',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=Mobile+App+Screenshot+3',
-                  thumbnail: 'https://placehold.co/100x75?text=3',
-                },
-              ]}
-              showPlayButton={false}
-              showFullscreenButton={true}
-              showThumbnails={true}
-              thumbnailPosition="bottom"
-            />
-          </div>
+
+          {openIndex !== null ? (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
+              <button
+                type="button"
+                className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-2 text-sm font-semibold text-slate-900 shadow-lg"
+                onClick={() => setOpenIndex(null)}
+                aria-label="Close image preview"
+              >
+                ✕
+              </button>
+
+              <div className="relative max-h-[90vh] w-full max-w-3xl overflow-hidden rounded-3xl bg-white p-4 shadow-2xl">
+                <div className="relative h-[70vh] w-full">
+                  <Image
+                    src={mobileScreens[openIndex].src}
+                    alt={mobileScreens[openIndex].alt}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <div className="mt-4 flex items-center justify-between gap-3">
+                  <p className="text-sm text-muted-foreground">{mobileScreens[openIndex].alt}</p>
+                  <div className="flex gap-2">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setOpenIndex((prev) =>
+                          prev === 0 ? mobileScreens.length - 1 : prev! - 1
+                        )
+                      }
+                      className="rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm transition hover:bg-neutral-100"
+                    >
+                      Prev
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setOpenIndex((prev) =>
+                          prev === mobileScreens.length - 1 ? 0 : prev! + 1
+                        )
+                      }
+                      className="rounded-full border border-neutral-200 bg-white px-3 py-1 text-sm transition hover:bg-neutral-100"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
         </div>
       </CardContent>
     </Card>
@@ -128,26 +195,8 @@ function WebTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <ImageGallery
-              items={[
-                {
-                  original: 'https://placehold.co/400x300?text=Web+App+Dashboard+1',
-                  thumbnail: 'https://placehold.co/100x75?text=1',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=Web+App+Dashboard+2',
-                  thumbnail: 'https://placehold.co/100x75?text=2',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=Web+App+Dashboard+3',
-                  thumbnail: 'https://placehold.co/100x75?text=3',
-                },
-              ]}
-              showPlayButton={false}
-              showFullscreenButton={true}
-              showThumbnails={true}
-              thumbnailPosition="bottom"
-            />
+            {/* image */}
+
           </div>
         </div>
       </CardContent>
@@ -194,26 +243,8 @@ function InfraTab() {
 </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <ImageGallery
-              items={[
-                {
-                  original: 'https://placehold.co/400x300?text=AWS+Architecture+1',
-                  thumbnail: 'https://placehold.co/100x75?text=1',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=AWS+Architecture+2',
-                  thumbnail: 'https://placehold.co/100x75?text=2',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=AWS+Architecture+3',
-                  thumbnail: 'https://placehold.co/100x75?text=3',
-                },
-              ]}
-              showPlayButton={false}
-              showFullscreenButton={true}
-              showThumbnails={true}
-              thumbnailPosition="bottom"
-            />
+              {/* image */}
+
           </div>
         </div>
       </CardContent>
@@ -258,26 +289,8 @@ function AiTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <ImageGallery
-              items={[
-                {
-                  original: 'https://placehold.co/400x300?text=AI+Model+Visualization+1',
-                  thumbnail: 'https://placehold.co/100x75?text=1',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=AI+Model+Visualization+2',
-                  thumbnail: 'https://placehold.co/100x75?text=2',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=AI+Model+Visualization+3',
-                  thumbnail: 'https://placehold.co/100x75?text=3',
-                },
-              ]}
-              showPlayButton={false}
-              showFullscreenButton={true}
-              showThumbnails={true}
-              thumbnailPosition="bottom"
-            />
+            {/* image */}
+
           </div>
         </div>
       </CardContent>
@@ -320,26 +333,7 @@ function IotTab() {
           </div>
           <hr className="border-t-2 border-gray-300" />
           <div className="flex-shrink-0">
-            <ImageGallery
-              items={[
-                {
-                  original: 'https://placehold.co/400x300?text=IoT+Device+Network+1',
-                  thumbnail: 'https://placehold.co/100x75?text=1',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=IoT+Device+Network+2',
-                  thumbnail: 'https://placehold.co/100x75?text=2',
-                },
-                {
-                  original: 'https://placehold.co/400x300?text=IoT+Device+Network+3',
-                  thumbnail: 'https://placehold.co/100x75?text=3',
-                },
-              ]}
-              showPlayButton={false}
-              showFullscreenButton={true}
-              showThumbnails={true}
-              thumbnailPosition="bottom"
-            />
+            {/* image */}
           </div>
         </div>
       </CardContent>
