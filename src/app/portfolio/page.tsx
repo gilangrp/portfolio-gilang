@@ -28,6 +28,8 @@ import web3 from '@/assets/web/web3.png';
 import web4 from '@/assets/web/web4.png';
 import web5 from '@/assets/web/web5.png';
 import web6 from '@/assets/web/web6.png';
+import asm1 from '@/assets/web/asm1.png';
+import asm2 from '@/assets/web/asm2.png';
 import iot1 from '@/assets/iot/iot1.jpeg';
 import iot2 from '@/assets/iot/iot2.png';
 import iot3 from '@/assets/iot/iot3.png';
@@ -53,12 +55,14 @@ const mobileScreens = [
 ];
 
 const webScreens = [
-  { src: web1, alt: 'Web Example 1' },
-  { src: web2, alt: 'Web Example 2' },
-  { src: web3, alt: 'Web Example 3' },
-  { src: web4, alt: 'Web Example 4' },
-  { src: web5, alt: 'Web Example 5' },
-  { src: web6, alt: 'Web Example 6' },
+  { src: web1, alt: 'ESG Ecogovern Application - 1' },
+  { src: web2, alt: 'ESG Ecogovern Application - 2' },
+  { src: web3, alt: 'Mobile Umrah & Hajj Travel App - 1' },
+  { src: web4, alt: 'Mobile Umrah & Hajj Travel App - 2' },
+  { src: web5, alt: 'Mobile Umrah & Hajj Travel App - 3' },
+  { src: web6, alt: 'Mobile Umrah & Hajj Travel App - 4' },
+  { src: asm1, alt: 'Manufacure Application - 1' },
+  { src: asm2, alt: 'Manufacure Application - 1' },
 ];
 
 const infraScreens = [
