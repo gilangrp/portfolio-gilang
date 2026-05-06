@@ -7,7 +7,20 @@ import mobile2 from '@/assets/mobile/mobile2.png';
 import mobile3 from '@/assets/mobile/mobile3.jpeg';
 import mobile4 from '@/assets/mobile/mobile4.jpeg';
 import mobile5 from '@/assets/mobile/mobile5.jpeg';
-import exampleImage from '@/assets/example.png';
+import ec2_1 from '@/assets/infra/ec2-1.png';
+import ec2_2 from '@/assets/infra/ec2-2.png';
+import ecr1 from '@/assets/infra/ecr1.png';
+import ecr2 from '@/assets/infra/ecr2.png';
+import ecr3 from '@/assets/infra/ecr3.png';
+import ecs1 from '@/assets/infra/ecs1.png';
+import ecs2 from '@/assets/infra/ecs2.png';
+import ecs3 from '@/assets/infra/ecs3.png';
+import iam1 from '@/assets/infra/iam1.png';
+import iam2 from '@/assets/infra/iam2.png';
+import iam3 from '@/assets/infra/iam3.png';
+import rds1 from '@/assets/infra/rds1.png';
+import rds2 from '@/assets/infra/rds2.png';
+import rds3 from '@/assets/infra/rds3.png';
 import web1 from '@/assets/web/web1.png';
 import web2 from '@/assets/web/web2.png';
 import web3 from '@/assets/web/web3.png';
@@ -48,9 +61,20 @@ const webScreens = [
 ];
 
 const infraScreens = [
-  { src: exampleImage, alt: 'Infra Example 1' },
-  { src: exampleImage, alt: 'Infra Example 2' },
-  { src: exampleImage, alt: 'Infra Example 3' },
+  { src: ec2_1, alt: 'EC2 instance details' },
+  { src: ec2_2, alt: 'EC2 instance networking' },
+  { src: ecr1, alt: 'ECR repository overview' },
+  { src: ecr2, alt: 'ECR image details' },
+  { src: ecr3, alt: 'ECR push commands' },
+  { src: ecs1, alt: 'ECS cluster overview' },
+  { src: ecs2, alt: 'ECS task definition details' },
+  { src: ecs3, alt: 'ECS task configuration' },
+  { src: iam1, alt: 'IAM user list' },
+  { src: iam2, alt: 'IAM role list' },
+  { src: iam3, alt: 'IAM policy view' },
+  { src: rds1, alt: 'RDS instance summary' },
+  { src: rds2, alt: 'RDS monitoring' },
+  { src: rds3, alt: 'RDS configuration details' },
 ];
 
 const aiScreens = [
