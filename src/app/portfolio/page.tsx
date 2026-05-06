@@ -18,8 +18,11 @@ import iot1 from '@/assets/iot/iot1.jpeg';
 import iot2 from '@/assets/iot/iot2.png';
 import iot3 from '@/assets/iot/iot3.png';
 import iot4 from '@/assets/iot/iot4.png';
-
-
+import ai1 from '@/assets/ai/ai1.png';
+import ai2 from '@/assets/ai/ai2.png';
+import ai3 from '@/assets/ai/ai3.png';
+import ai4 from '@/assets/ai/ai4.png';
+import ai5 from '@/assets/ai/ai5.png';
 
 
 
@@ -51,9 +54,11 @@ const infraScreens = [
 ];
 
 const aiScreens = [
-  { src: exampleImage, alt: 'AI/ML Example 1' },
-  { src: exampleImage, alt: 'AI/ML Example 2' },
-  { src: exampleImage, alt: 'AI/ML Example 3' },
+  { src: ai1, alt: 'Ecogovern web integration with AWS Bedrock for ESG activity features' },
+  { src: ai2, alt: 'AWS Glue ETL jobs' },
+  { src: ai3, alt: 'Data exported from AWS Glue jobs' },
+  { src: ai4, alt: 'AWS Bedrock knowledge base' },
+  { src: ai5, alt: 'AWS Lambda calling the Bedrock knowledge base' },
 ];
 
 const iotScreens = [
