@@ -64,6 +64,7 @@ const webScreens = [
 const infraScreens = [
   { src: tf1, alt: 'Terraform AWS configuration' },
   { src: ec2_1, alt: 'EC2 instance details' },
+  { src: ai2, alt: 'AWS Glue ETL Jobs' },
   // { src: ec2_2, alt: 'EC2 instance networking' },
   // { src: ecr1, alt: 'ECR repository overview' },
   // { src: ecr2, alt: 'ECR image details' },
