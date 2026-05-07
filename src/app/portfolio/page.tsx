@@ -39,6 +39,7 @@ import ai2 from '@/assets/ai/ai2.png';
 import ai3 from '@/assets/ai/ai3.png';
 import ai4 from '@/assets/ai/ai4.png';
 import ai5 from '@/assets/ai/ai5.png';
+import eg6 from '@/assets/Ecogovern_Screenshot_ESG_Intelligence/eg6.png';
 
 
 
@@ -86,6 +87,7 @@ const infraScreens = [
 
 const aiScreens = [
   { src: ai1, alt: 'Ecogovern web integration with AWS Bedrock for ESG activity features' },
+  { src: eg6, alt: 'Ecogovern web integration with AWS Bedrock' },
   { src: ai2, alt: 'AWS Glue ETL jobs' },
   { src: ai3, alt: 'Data exported from AWS Glue jobs' },
   { src: ai4, alt: 'AWS Bedrock knowledge base' },
