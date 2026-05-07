@@ -7,6 +7,7 @@ import mobile2 from '@/assets/mobile/mobile2.png';
 import mobile3 from '@/assets/mobile/mobile3.jpeg';
 import mobile4 from '@/assets/mobile/mobile4.jpeg';
 import mobile5 from '@/assets/mobile/mobile5.jpeg';
+import mobile6 from '@/assets/mobile/mobile6.png';
 import ec2_1 from '@/assets/infra/ec2-1.png';
 // import ec2_2 from '@/assets/infra/ec2-2.png';
 // import ecr1 from '@/assets/infra/ecr1.png';
@@ -48,11 +49,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Navbar } from '../_components/Navbar';
 
 const mobileScreens = [
-  { src: mobile1, alt: 'Mobile Playstore Deployment' },
-  { src: mobile2, alt: 'Mobile App Store iOS Deployment' },
   { src: mobile3, alt: 'Mobile Umrah & Hajj Travel App - 1' },
   { src: mobile4, alt: 'Mobile Umrah & Hajj Travel App - 2' },
   { src: mobile5, alt: 'Mobile Umrah & Hajj Travel App - 3' },
+  { src: mobile1, alt: 'Mobile Playstore' },
+  { src: mobile6, alt: 'Mobile App Store' },
+  { src: mobile2, alt: 'Mobile App Store iOS Deployment' },
 ];
 
 const webScreens = [
