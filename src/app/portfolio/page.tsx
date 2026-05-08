@@ -39,6 +39,8 @@ import ai1 from '@/assets/ai/ai1.png';
 import ai2 from '@/assets/ai/ai2.png';
 import ai3 from '@/assets/ai/ai3.png';
 import ai4 from '@/assets/ai/ai4.png';
+import ai6 from '@/assets/ai/ai6.png';
+import ai7 from '@/assets/ai/ai7.png';
 import ai5 from '@/assets/ai/ai5.png';
 import eg6 from '@/assets/Ecogovern_Screenshot_ESG_Intelligence/eg6.png';
 
@@ -94,6 +96,8 @@ const aiScreens = [
   { src: ai3, alt: 'Data exported from AWS Glue jobs' },
   { src: ai4, alt: 'AWS Bedrock knowledge base' },
   { src: ai5, alt: 'AWS Lambda calling the Bedrock knowledge base' },
+  { src: ai6, alt: 'Image Classification - 1' },
+  { src: ai7, alt: 'Image Classification - 2' },
 ];
 
 const iotScreens = [
